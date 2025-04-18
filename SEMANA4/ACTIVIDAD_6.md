@@ -36,7 +36,37 @@ Explica la diferencia entre git merge y git rebase y describe en qué escenarios
 
 ### 1. Simulación de un flujo de trabajo Scrum con git rebase y git merge
 Creacion de las ramas main y feature con sus respectivos commits
-![main-feature](images/6.1.1)
+![main-feature](images/6.1.1.png)
+
+Se realiza un rebase de manera que la rama feature ahora inicia desde el ultimo commit de main y finalmente un merge `--ff-only`
+![rebase-merge](images/6.1.2.png)
+
+### 2. Cherry-pick para integración selectiva en un pipeline CI/CD
+Creacion de las ramas main y feature con sus respectivos commits (comandos de la actividad)
+![main-feature](images/6.2.1.png)
+
+Uso de `cherry-pick` para añadir en la direccion de head es decir main los cambios de feature1 y feature2 como un nuevo commit, es decir añade los cambios de ambos commits en la direccion de head
+![cherry-pick](images/6.2.2.png)
+
+### 3. Git, Scrum y Sprints
+Fase 1: Planificación del sprint (sprint planning)
+![fase1](images/6.3.1.png)
+
+Fase 2: Desarrollo del sprint (sprint execution)
+![fase2](images/6.3.2.png)
+
+Fase 3: Revisión del sprint (sprint review)
+![fase3](images/6.3.3.png)
+
+Fase 4: Retrospectiva del sprint (sprint retrospective)
+![fase4](images/6.3.5.png)
+
+Fase 5: Fase de desarrollo, automatización de integración continua (CI) con git rebase
+![fase6](images/6.3.6.png)
+
+
+
+
 
 
   
